@@ -253,7 +253,7 @@ class GameWindow(arcade.Window):
         if self.current_level < 3:
             arcade.draw_text("Нажмите SPACE для следующего уровня", 
                             SCREEN_WIDTH // 2, SCREEN_HEIGHT - 400,
-                            arcade.color.GREEN, 20, anchor_x="center")
+                            arcade.color.BLACK, 20, anchor_x="center")
         else:
             arcade.draw_text("ИГРА ПРОЙДЕНА! Нажмите SPACE для меню", 
                             SCREEN_WIDTH // 2, SCREEN_HEIGHT - 400,
@@ -261,7 +261,7 @@ class GameWindow(arcade.Window):
         
         arcade.draw_text("Нажмите ESC для сохранения и выхода в меню", 
                         SCREEN_WIDTH // 2, SCREEN_HEIGHT - 450,
-                        arcade.color.LIGHT_GRAY, 18, anchor_x="center")
+                        arcade.color.BLACK, 18, anchor_x="center")
     
     def draw_menu(self):
         arcade.draw_text("Bugilla!", 
@@ -276,7 +276,7 @@ class GameWindow(arcade.Window):
         if saved_game:
             arcade.draw_text(f"Сохранение: Уровень {saved_game['level']}, Очки: {saved_game['score']}", 
                             SCREEN_WIDTH // 2, SCREEN_HEIGHT - 220,
-                            arcade.color.GREEN, 18, anchor_x="center")
+                            arcade.color.BLUE, 18, anchor_x="center")
         
         arcade.draw_text("1 - Новая игра", 
                         SCREEN_WIDTH // 2, SCREEN_HEIGHT - 280,
