@@ -3,7 +3,6 @@ from game import GameWindow
 
 
 def main():
-    """Главная функция"""
     window = GameWindow()
     window.setup()
     arcade.run()

@@ -1,9 +1,7 @@
 class Level:
-    """Класс для определения уровней"""
     
     @staticmethod
     def get_level(level_num):
-        """Возвращает конфигурацию уровня"""
         levels = {
             1: {
                 'name': 'Небесный дэнс',
